@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>王玉 大SB！</title>
+</head>
+<body>
+<h1 id="h">王玉 大SB！</h1>
+</body>
+</html>
+
+<style>
+    #h {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        margin-top: -40px;
+    }
+</style>
+
+<script>
+  const color = ['red', 'green', 'black', 'blue', '#cb3242']
+
+  setInterval(() => {
+    color.sort(() => {
+      return Math.random() - 0.5
+    })
+
+    document.querySelector('#h').style.color = color[0]
+  }, 300)
+</script>
